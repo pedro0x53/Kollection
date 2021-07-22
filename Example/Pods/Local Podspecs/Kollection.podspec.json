@@ -1,0 +1,22 @@
+{
+  "name": "Kollection",
+  "version": "0.1.0",
+  "summary": "A short description of Kollection.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pedro0x53/Kollection",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pedro0x53": "pedrosousa2708@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/pedro0x53/Kollection.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Kollection/Classes/**/*"
+}
