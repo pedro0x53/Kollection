@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B851EAA26AEDA39004331AD /* KQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B851EA826AEDA39004331AD /* KQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B851EAB26AEDA39004331AD /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851EA926AEDA39004331AD /* KQueue.m */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7326AB0666003DD051 /* KStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE7126AB0666003DD051 /* KStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7426AB0666003DD051 /* KStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2BE7226AB0666003DD051 /* KStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B851EA826AEDA39004331AD /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
+		4B851EA926AEDA39004331AD /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
 		FEF2BE5626AB05CD003DD051 /* Kollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF2BE5926AB05CD003DD051 /* Kollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kollection.h; sourceTree = "<group>"; };
 		FEF2BE5A26AB05CD003DD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,9 +35,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B851EA726AEDA39004331AD /* KQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4B851EA826AEDA39004331AD /* KQueue.h */,
+				4B851EA926AEDA39004331AD /* KQueue.m */,
+			);
+			path = KQueue;
+			sourceTree = "<group>";
+		};
 		FE218C9E26AB15BD003A1C0B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4B851EA726AEDA39004331AD /* KQueue */,
 				FEF2BE7026AB0666003DD051 /* KStack */,
 			);
 			path = Source;
@@ -83,6 +97,7 @@
 			files = (
 				FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */,
 				FEF2BE7326AB0666003DD051 /* KStack.h in Headers */,
+				4B851EAA26AEDA39004331AD /* KQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF2BE7426AB0666003DD051 /* KStack.m in Sources */,
+				4B851EAB26AEDA39004331AD /* KQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
