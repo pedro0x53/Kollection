@@ -19,5 +19,4 @@ Pod::Spec.new do |spec|
   spec.source         = { :git => "https://github.com/pedro0x53/Kollection.git", :tag => "#{spec.version}" }
 
   spec.source_files   = "Classes", "Kollection/**/*.{h,m}"
-  spec.exclude_files  = "Classes/KollectionTest"
 end

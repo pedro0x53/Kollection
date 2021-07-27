@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE04975A26B041490072045D /* KDoublyLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975526B041480072045D /* KDoublyLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE04975B26B041490072045D /* KDoubleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975726B041480072045D /* KDoubleNode.m */; };
+		FE04975C26B041490072045D /* KDoubleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975826B041480072045D /* KDoubleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE04975D26B041490072045D /* KDoublyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975926B041480072045D /* KDoublyLinkedList.m */; };
 		4B851EAA26AEDA39004331AD /* KQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B851EA826AEDA39004331AD /* KQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B851EAB26AEDA39004331AD /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851EA926AEDA39004331AD /* KQueue.m */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE04975526B041480072045D /* KDoublyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoublyLinkedList.h; sourceTree = "<group>"; };
+		FE04975726B041480072045D /* KDoubleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoubleNode.m; sourceTree = "<group>"; };
+		FE04975826B041480072045D /* KDoubleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoubleNode.h; sourceTree = "<group>"; };
+		FE04975926B041480072045D /* KDoublyLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoublyLinkedList.m; sourceTree = "<group>"; };
 		4B851EA826AEDA39004331AD /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
 		4B851EA926AEDA39004331AD /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
 		FEF2BE5626AB05CD003DD051 /* Kollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE04975426B041480072045D /* KDoublyLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				FE04975626B041480072045D /* KDoubleNode */,
+				FE04975526B041480072045D /* KDoublyLinkedList.h */,
+				FE04975926B041480072045D /* KDoublyLinkedList.m */,
+			);
+			path = KDoublyLinkedList;
+			sourceTree = "<group>";
+		};
+		FE04975626B041480072045D /* KDoubleNode */ = {
+			isa = PBXGroup;
+			children = (
+				FE04975726B041480072045D /* KDoubleNode.m */,
+				FE04975826B041480072045D /* KDoubleNode.h */,
+			);
+			path = KDoubleNode;
+			sourceTree = "<group>";
+		};
 		4B851EA726AEDA39004331AD /* KQueue */ = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +74,7 @@
 		FE218C9E26AB15BD003A1C0B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FE04975426B041480072045D /* KDoublyLinkedList */,
 				4B851EA726AEDA39004331AD /* KQueue */,
 				FEF2BE7026AB0666003DD051 /* KStack */,
 			);
@@ -96,7 +124,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */,
+				FE04975A26B041490072045D /* KDoublyLinkedList.h in Headers */,
 				FEF2BE7326AB0666003DD051 /* KStack.h in Headers */,
+				FE04975C26B041490072045D /* KDoubleNode.h in Headers */,
 				4B851EAA26AEDA39004331AD /* KQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE04975B26B041490072045D /* KDoubleNode.m in Sources */,
+				FE04975D26B041490072045D /* KDoublyLinkedList.m in Sources */,
 				FEF2BE7426AB0666003DD051 /* KStack.m in Sources */,
 				4B851EAB26AEDA39004331AD /* KQueue.m in Sources */,
 			);
