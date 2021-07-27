@@ -49,9 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void) append: (id) element {
-    if (self.isEmpty) {
-        self.isEmpty = NO;
-    }
+    if (self.isEmpty) { self.isEmpty = NO; }
 
     KDoubleNode * node = [[KDoubleNode alloc] initWithValue: element];
     
@@ -114,22 +112,34 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable id) removeFirst {
+    if (self.count == 0) { return nil }
+
     KDoubleNode * oldHead = self.head;
     self.head = oldHead.next;
     self.head.previous = nil;
     self.count--;
+
+    if (self.count == 0) { self.isEmpty = YES; }
+    
     return oldHead.value;
 }
 
 - (nullable id) removeLast {
+    if (self.count == 0) { return nil }
+
     KDoubleNode * oldTail = self.tail;
     self.tail = oldTail.previous;
     self.tail.next = nil;
     self.count--;
+
+    if (self.count == 0) { self.isEmpty = YES; }
+
     return oldTail.value;
 }
 
 - (nullable id) removeAtIndex: (NSInteger) index {
+    if (self.count == 0) { return nil; }
+
     if (self.count - 1 < index) {
         NSLog(@"Index out of bounds.");
         return nil;
@@ -153,6 +163,8 @@ NS_ASSUME_NONNULL_BEGIN
     removed.previous = nil;
 
     self.count--;
+
+    if (self.count == 0) { self.isEmpty = YES; }
 
     return removed.value;
     
