@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7BE3E726B05AB000CE00CD /* KNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7BE3E326B05AB000CE00CD /* KNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7BE3E826B05AB000CE00CD /* KLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7BE3E426B05AB000CE00CD /* KLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7BE3E926B05AB000CE00CD /* KNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE3E526B05AB000CE00CD /* KNode.m */; };
+		4B7BE3EA26B05AB000CE00CD /* KLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE3E626B05AB000CE00CD /* KLinkedList.m */; };
 		4B851EAA26AEDA39004331AD /* KQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B851EA826AEDA39004331AD /* KQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B851EAB26AEDA39004331AD /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851EA926AEDA39004331AD /* KQueue.m */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7BE3E326B05AB000CE00CD /* KNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNode.h; sourceTree = "<group>"; };
+		4B7BE3E426B05AB000CE00CD /* KLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLinkedList.h; sourceTree = "<group>"; };
+		4B7BE3E526B05AB000CE00CD /* KNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNode.m; sourceTree = "<group>"; };
+		4B7BE3E626B05AB000CE00CD /* KLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLinkedList.m; sourceTree = "<group>"; };
 		4B851EA826AEDA39004331AD /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
 		4B851EA926AEDA39004331AD /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
 		FEF2BE5626AB05CD003DD051 /* Kollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B7BE3E226B05AB000CE00CD /* KLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BE3EB26B05ABA00CE00CD /* KNode */,
+				4B7BE3E426B05AB000CE00CD /* KLinkedList.h */,
+				4B7BE3E626B05AB000CE00CD /* KLinkedList.m */,
+			);
+			path = KLinkedList;
+			sourceTree = "<group>";
+		};
+		4B7BE3EB26B05ABA00CE00CD /* KNode */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BE3E326B05AB000CE00CD /* KNode.h */,
+				4B7BE3E526B05AB000CE00CD /* KNode.m */,
+			);
+			path = KNode;
+			sourceTree = "<group>";
+		};
 		4B851EA726AEDA39004331AD /* KQueue */ = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +74,7 @@
 		FE218C9E26AB15BD003A1C0B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4B7BE3E226B05AB000CE00CD /* KLinkedList */,
 				4B851EA726AEDA39004331AD /* KQueue */,
 				FEF2BE7026AB0666003DD051 /* KStack */,
 			);
@@ -95,8 +123,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7BE3E826B05AB000CE00CD /* KLinkedList.h in Headers */,
 				FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */,
 				FEF2BE7326AB0666003DD051 /* KStack.h in Headers */,
+				4B7BE3E726B05AB000CE00CD /* KNode.h in Headers */,
 				4B851EAA26AEDA39004331AD /* KQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7BE3E926B05AB000CE00CD /* KNode.m in Sources */,
 				FEF2BE7426AB0666003DD051 /* KStack.m in Sources */,
+				4B7BE3EA26B05AB000CE00CD /* KLinkedList.m in Sources */,
 				4B851EAB26AEDA39004331AD /* KQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
