@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable id) removeFirst {
-    if (self.count == 0) { return nil }
+    if (self.count == 0) { return nil; }
 
     KDoubleNode * oldHead = self.head;
     self.head = oldHead.next;
@@ -125,7 +125,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable id) removeLast {
-    if (self.count == 0) { return nil }
+    if (self.count == 0) { return nil; }
 
     KDoubleNode * oldTail = self.tail;
     self.tail = oldTail.previous;
