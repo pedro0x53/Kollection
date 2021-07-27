@@ -40,14 +40,19 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void) append: (id) element {
-    [self.stack insertObject: element atIndex: 0];
-    self.count++;
-    if (self.count > 0) {
+    if (self.count == 0) {
         self.isEmpty = NO;
     }
+
+    [self.stack insertObject: element atIndex: 0];
+    self.count++;
 }
 
 - (void) appendElementsOFArray: (NSArray<id> *)  array {
+    if (self.count == 0) {
+        self.isEmpty = NO;
+    }
+
     for (id value in array) {
         [self.stack insertObject: value atIndex: 0];
         self.count++;
@@ -55,21 +60,23 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (nullable id) remove {
-    if ([self.stack count] == 0) {
+    if (self.count == 0) {
         return nil;
     } else {
         id element = self.stack[0];
         [self.stack removeObjectAtIndex: 0];
+
         self.count--;
         if (self.count == 0) {
             self.isEmpty = YES;
         }
+
         return element;
     }
 }
 
 - (nullable id) removeAtIndex: (NSInteger) index {
-    if (([self.stack count] == 0) || ([self.stack count] - 1 < index)) {
+    if ((self.count == 0) || (self.count - 1 < index)) {
         return nil;
     } else {
         id result = self.stack[index];
@@ -81,7 +88,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSInteger) firstIndexOf: (id) element {
     for (int i = 0; i < self.count; i++) {
-        if ([self.stack[i] isEqual: element]) {
+        if (self.stack[i] == element) {
             return i;
         }
     }
