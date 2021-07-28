@@ -39,28 +39,27 @@ and attributes:
 ### Example
 
 ```objective-c
-	KStack<NSNumber *> * stack = [[KStack alloc] init];
+KStack<NSNumber *> * stack = [[KStack alloc] init];
+NSLog(stack.isEmpty ? @"YES" : @"NO");
 
-    NSLog(stack.isEmpty ? @"YES" : @"NO");
+[stack append: @1];
+[stack append: @2];
+[stack append: @3];
 
-    [stack append: @1];
-    [stack append: @2];
-    [stack append: @3];
+NSLog(@"%@", stack);
 
-    NSLog(@"%@", stack);
+NSLog(stack.isEmpty ? @"YES" : @"NO");
 
-    NSLog(stack.isEmpty ? @"YES" : @"NO");
+NSNumber * n = [stack remove];
+NSLog(@"%@", n);
+NSLog(@"%@", stack);
 
-    NSNumber * n = [stack remove];
-    NSLog(@"%@", n);
-    NSLog(@"%@", stack);
-
-    NSInteger index = [stack firstIndexOf: @1];
-    if (index == -1) {
-        NSLog(@"Element not found.");
-    } else {
-        NSLog(@"%ld", index);
-    }
+NSInteger index = [stack firstIndexOf: @1];
+if (index == -1) {
+    NSLog(@"Element not found.");
+} else {
+    NSLog(@"%ld", index);
+}
 ```
 
 ## Installation
