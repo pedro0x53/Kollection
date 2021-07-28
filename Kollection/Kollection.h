@@ -17,6 +17,6 @@ FOUNDATION_EXPORT const unsigned char KollectionVersionString[];
 
 #import <Kollection/KStack.h>
 #import <Kollection/KQueue.h>
-#import <Kollection/KLinkedNode.h>
+#import <Kollection/KLinkedList.h>
 #import <Kollection/KDoublyLinkedList.h>
 

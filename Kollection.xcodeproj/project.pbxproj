@@ -11,12 +11,13 @@
 		4B7BE3E826B05AB000CE00CD /* KLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7BE3E426B05AB000CE00CD /* KLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B7BE3E926B05AB000CE00CD /* KNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE3E526B05AB000CE00CD /* KNode.m */; };
 		4B7BE3EA26B05AB000CE00CD /* KLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE3E626B05AB000CE00CD /* KLinkedList.m */; };
+		4B851EAA26AEDA39004331AD /* KQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B851EA826AEDA39004331AD /* KQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B851EAB26AEDA39004331AD /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851EA926AEDA39004331AD /* KQueue.m */; };
 		FE04975A26B041490072045D /* KDoublyLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975526B041480072045D /* KDoublyLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE04975B26B041490072045D /* KDoubleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975726B041480072045D /* KDoubleNode.m */; };
 		FE04975C26B041490072045D /* KDoubleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975826B041480072045D /* KDoubleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE04975D26B041490072045D /* KDoublyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975926B041480072045D /* KDoublyLinkedList.m */; };
-		4B851EAA26AEDA39004331AD /* KQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B851EA826AEDA39004331AD /* KQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B851EAB26AEDA39004331AD /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851EA926AEDA39004331AD /* KQueue.m */; };
+		FEF1654026B17BB60028461E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF2BE5A26AB05CD003DD051 /* Info.plist */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7326AB0666003DD051 /* KStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE7126AB0666003DD051 /* KStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7426AB0666003DD051 /* KStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2BE7226AB0666003DD051 /* KStack.m */; };
@@ -27,12 +28,12 @@
 		4B7BE3E426B05AB000CE00CD /* KLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLinkedList.h; sourceTree = "<group>"; };
 		4B7BE3E526B05AB000CE00CD /* KNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNode.m; sourceTree = "<group>"; };
 		4B7BE3E626B05AB000CE00CD /* KLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLinkedList.m; sourceTree = "<group>"; };
+		4B851EA826AEDA39004331AD /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
+		4B851EA926AEDA39004331AD /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
 		FE04975526B041480072045D /* KDoublyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoublyLinkedList.h; sourceTree = "<group>"; };
 		FE04975726B041480072045D /* KDoubleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoubleNode.m; sourceTree = "<group>"; };
 		FE04975826B041480072045D /* KDoubleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoubleNode.h; sourceTree = "<group>"; };
 		FE04975926B041480072045D /* KDoublyLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoublyLinkedList.m; sourceTree = "<group>"; };
-		4B851EA826AEDA39004331AD /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
-		4B851EA926AEDA39004331AD /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
 		FEF2BE5626AB05CD003DD051 /* Kollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF2BE5926AB05CD003DD051 /* Kollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kollection.h; sourceTree = "<group>"; };
 		FEF2BE5A26AB05CD003DD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,8 +69,17 @@
 				4B7BE3E526B05AB000CE00CD /* KNode.m */,
 			);
 			path = KNode;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
+		4B851EA726AEDA39004331AD /* KQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4B851EA826AEDA39004331AD /* KQueue.h */,
+				4B851EA926AEDA39004331AD /* KQueue.m */,
+			);
+			path = KQueue;
+			sourceTree = "<group>";
+		};
 		FE04975426B041480072045D /* KDoublyLinkedList */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,15 +97,6 @@
 				FE04975826B041480072045D /* KDoubleNode.h */,
 			);
 			path = KDoubleNode;
-			sourceTree = "<group>";
-		};
-		4B851EA726AEDA39004331AD /* KQueue */ = {
-			isa = PBXGroup;
-			children = (
-				4B851EA826AEDA39004331AD /* KQueue.h */,
-				4B851EA926AEDA39004331AD /* KQueue.m */,
-			);
-			path = KQueue;
 			sourceTree = "<group>";
 		};
 		FE218C9E26AB15BD003A1C0B /* Source */ = {
@@ -218,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF1654026B17BB60028461E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
