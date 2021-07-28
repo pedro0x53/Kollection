@@ -1,15 +1,66 @@
 # Kollection
 
-[![CI Status](https://img.shields.io/travis/pedro0x53/Kollection.svg?style=flat)](https://travis-ci.org/pedro0x53/Kollection)
-[![Version](https://img.shields.io/cocoapods/v/Kollection.svg?style=flat)](https://cocoapods.org/pods/Kollection)
-[![License](https://img.shields.io/cocoapods/l/Kollection.svg?style=flat)](https://cocoapods.org/pods/Kollection)
-[![Platform](https://img.shields.io/cocoapods/p/Kollection.svg?style=flat)](https://cocoapods.org/pods/Kollection)
+A framework that provides some data structures to use on your project.
+The available structures are: Queue, Stack, Linked List and Doubly Linked List.
 
-## Example
+## Functions and Attributes
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### Common
 
-## Requirements
+Every data structure has a set of common functions:
+
+* append
+* appendElementsOfArray
+* remove
+* removeAtIndex
+* firstIndexOf
+
+and attributes:
+
+* isEmpty
+* count
+
+
+### Specific
+
+Linked List and Doubly Linked List have extra functions:
+
+* appendFirst
+* appendAtIndex
+* removeFirst
+* removeLast
+
+and attributes:
+
+* head
+* tail
+
+
+### Example
+
+```objective-c
+KStack<NSNumber *> * stack = [[KStack alloc] init];
+NSLog(stack.isEmpty ? @"YES" : @"NO");
+
+[stack append: @1];
+[stack append: @2];
+[stack append: @3];
+
+NSLog(@"%@", stack);
+
+NSLog(stack.isEmpty ? @"YES" : @"NO");
+
+NSNumber * n = [stack remove];
+NSLog(@"%@", n);
+NSLog(@"%@", stack);
+
+NSInteger index = [stack firstIndexOf: @1];
+if (index == -1) {
+    NSLog(@"Element not found.");
+} else {
+    NSLog(@"%ld", index);
+}
+```
 
 ## Installation
 
@@ -22,7 +73,7 @@ pod 'Kollection'
 
 ## Author
 
-pedro0x53, pedrosousa2708@gmail.com
+pedro0x53, daviaugusto222
 
 ## License
 
