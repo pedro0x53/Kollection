@@ -17,10 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, assign) BOOL isEmpty;
 
 - (void) append: (ObjectType) element;
-- (void) appendElementsOFArray: (NSArray<id> *)  array;
+- (void) appendElementsOfArray: (NSArray<id> *)  array;
 
 - (nullable ObjectType) remove;
-- (nullable id) removeAtIndex: (NSInteger) index;
 
 - (NSInteger) firstIndexOf: (id) element;
 @end
