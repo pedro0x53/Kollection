@@ -17,10 +17,21 @@
 		FE04975B26B041490072045D /* KDoubleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975726B041480072045D /* KDoubleNode.m */; };
 		FE04975C26B041490072045D /* KDoubleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975826B041480072045D /* KDoubleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE04975D26B041490072045D /* KDoublyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975926B041480072045D /* KDoublyLinkedList.m */; };
+		FEE863E226B2D2280069AB5B /* Kollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF2BE5626AB05CD003DD051 /* Kollection.framework */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7326AB0666003DD051 /* KStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE7126AB0666003DD051 /* KStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7426AB0666003DD051 /* KStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2BE7226AB0666003DD051 /* KStack.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEE863E326B2D2280069AB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF2BE4D26AB05CD003DD051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF2BE5526AB05CD003DD051;
+			remoteInfo = Kollection;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4B7BE3E326B05AB000CE00CD /* KNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNode.h; sourceTree = "<group>"; };
@@ -33,6 +44,8 @@
 		FE04975726B041480072045D /* KDoubleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoubleNode.m; sourceTree = "<group>"; };
 		FE04975826B041480072045D /* KDoubleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoubleNode.h; sourceTree = "<group>"; };
 		FE04975926B041480072045D /* KDoublyLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoublyLinkedList.m; sourceTree = "<group>"; };
+		FEE863DD26B2D2280069AB5B /* KollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE863E126B2D2280069AB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF2BE5626AB05CD003DD051 /* Kollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF2BE5926AB05CD003DD051 /* Kollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kollection.h; sourceTree = "<group>"; };
 		FEF2BE5A26AB05CD003DD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +54,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FEE863DA26B2D2280069AB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE863E226B2D2280069AB5B /* Kollection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEF2BE5326AB05CD003DD051 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,10 +130,19 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		FEE863DE26B2D2280069AB5B /* KollectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEE863E126B2D2280069AB5B /* Info.plist */,
+			);
+			path = KollectionTests;
+			sourceTree = "<group>";
+		};
 		FEF2BE4C26AB05CD003DD051 = {
 			isa = PBXGroup;
 			children = (
 				FEF2BE5826AB05CD003DD051 /* Kollection */,
+				FEE863DE26B2D2280069AB5B /* KollectionTests */,
 				FEF2BE5726AB05CD003DD051 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF2BE5626AB05CD003DD051 /* Kollection.framework */,
+				FEE863DD26B2D2280069AB5B /* KollectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +195,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		FEE863DC26B2D2280069AB5B /* KollectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE863E726B2D2280069AB5B /* Build configuration list for PBXNativeTarget "KollectionTests" */;
+			buildPhases = (
+				FEE863D926B2D2280069AB5B /* Sources */,
+				FEE863DA26B2D2280069AB5B /* Frameworks */,
+				FEE863DB26B2D2280069AB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEE863E426B2D2280069AB5B /* PBXTargetDependency */,
+			);
+			name = KollectionTests;
+			productName = KollectionTests;
+			productReference = FEE863DD26B2D2280069AB5B /* KollectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FEF2BE5526AB05CD003DD051 /* Kollection */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEF2BE6A26AB05CD003DD051 /* Build configuration list for PBXNativeTarget "Kollection" */;
@@ -190,6 +239,9 @@
 			attributes = {
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					FEE863DC26B2D2280069AB5B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					FEF2BE5526AB05CD003DD051 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -209,11 +261,19 @@
 			projectRoot = "";
 			targets = (
 				FEF2BE5526AB05CD003DD051 /* Kollection */,
+				FEE863DC26B2D2280069AB5B /* KollectionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FEE863DB26B2D2280069AB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEF2BE5426AB05CD003DD051 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,6 +284,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FEE863D926B2D2280069AB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEF2BE5226AB05CD003DD051 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +306,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FEE863E426B2D2280069AB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF2BE5526AB05CD003DD051 /* Kollection */;
+			targetProxy = FEE863E326B2D2280069AB5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FEE863E526B2D2280069AB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				INFOPLIST_FILE = KollectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedro0x53.KollectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEE863E626B2D2280069AB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				INFOPLIST_FILE = KollectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedro0x53.KollectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FEF2BE6826AB05CD003DD051 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +524,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FEE863E726B2D2280069AB5B /* Build configuration list for PBXNativeTarget "KollectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE863E526B2D2280069AB5B /* Debug */,
+				FEE863E626B2D2280069AB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FEF2BE5026AB05CD003DD051 /* Build configuration list for PBXProject "Kollection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
