@@ -17,7 +17,6 @@
 		FE04975B26B041490072045D /* KDoubleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975726B041480072045D /* KDoubleNode.m */; };
 		FE04975C26B041490072045D /* KDoubleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975826B041480072045D /* KDoubleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE04975D26B041490072045D /* KDoublyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975926B041480072045D /* KDoublyLinkedList.m */; };
-		FEF1654026B17BB60028461E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF2BE5A26AB05CD003DD051 /* Info.plist */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7326AB0666003DD051 /* KStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE7126AB0666003DD051 /* KStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7426AB0666003DD051 /* KStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2BE7226AB0666003DD051 /* KStack.m */; };
@@ -219,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF1654026B17BB60028461E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
