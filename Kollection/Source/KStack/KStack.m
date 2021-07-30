@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
     self.count++;
 }
 
-- (void) appendElementsOFArray: (NSArray<id> *)  array {
+- (void) appendElementsOfArray: (NSArray<id> *)  array {
     if (self.count == 0) {
         self.isEmpty = NO;
     }
@@ -72,17 +72,6 @@ NS_ASSUME_NONNULL_BEGIN
         }
 
         return element;
-    }
-}
-
-- (nullable id) removeAtIndex: (NSInteger) index {
-    if ((self.count == 0) || (self.count - 1 < index)) {
-        return nil;
-    } else {
-        id result = self.stack[index];
-        [self.stack removeObjectAtIndex: index];
-        self.count--;
-        return result;
     }
 }
 
