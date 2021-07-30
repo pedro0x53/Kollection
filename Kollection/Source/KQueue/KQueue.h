@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) append: (ObjectType) value;
 - (void) appendElementsOfArray: (NSArray *) array;
 - (nullable ObjectType) remove;
-- (nullable ObjectType) removeAtIndex: (NSInteger) index;
 - (NSInteger) firstIndexOf: (ObjectType) value;
 
 @end
