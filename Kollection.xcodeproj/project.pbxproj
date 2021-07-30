@@ -13,6 +13,7 @@
 		4B7BE3EA26B05AB000CE00CD /* KLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE3E626B05AB000CE00CD /* KLinkedList.m */; };
 		4B851EAA26AEDA39004331AD /* KQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B851EA826AEDA39004331AD /* KQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B851EAB26AEDA39004331AD /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851EA926AEDA39004331AD /* KQueue.m */; };
+		4BB19FE026B2D9CB00E06487 /* KQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB19FDF26B2D9CB00E06487 /* KQueueTests.m */; };
 		FE04975A26B041490072045D /* KDoublyLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975526B041480072045D /* KDoublyLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE04975B26B041490072045D /* KDoubleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975726B041480072045D /* KDoubleNode.m */; };
 		FE04975C26B041490072045D /* KDoubleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FE04975826B041480072045D /* KDoubleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,7 @@
 		4B7BE3E626B05AB000CE00CD /* KLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLinkedList.m; sourceTree = "<group>"; };
 		4B851EA826AEDA39004331AD /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
 		4B851EA926AEDA39004331AD /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
+		4BB19FDF26B2D9CB00E06487 /* KQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KQueueTests.m; sourceTree = "<group>"; };
 		FE04975526B041480072045D /* KDoublyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoublyLinkedList.h; sourceTree = "<group>"; };
 		FE04975726B041480072045D /* KDoubleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDoubleNode.m; sourceTree = "<group>"; };
 		FE04975826B041480072045D /* KDoubleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDoubleNode.h; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				FEE863E126B2D2280069AB5B /* Info.plist */,
+				4BB19FDF26B2D9CB00E06487 /* KQueueTests.m */,
 				FEE863EA26B2D31B0069AB5B /* KStackTest.m */,
 				FEE863EC26B2E48C0069AB5B /* KDoublyLinkedListTest.m */,
 			);
@@ -247,6 +250,7 @@
 				TargetAttributes = {
 					FEE863DC26B2D2280069AB5B = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					FEF2BE5526AB05CD003DD051 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -294,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB19FE026B2D9CB00E06487 /* KQueueTests.m in Sources */,
 				FEE863EB26B2D31B0069AB5B /* KStackTest.m in Sources */,
 				FEE863ED26B2E48C0069AB5B /* KDoublyLinkedListTest.m in Sources */,
 			);
@@ -326,6 +331,7 @@
 		FEE863E526B2D2280069AB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF4K4YZ8PT;
 				INFOPLIST_FILE = KollectionTests/Info.plist;
@@ -337,6 +343,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedro0x53.KollectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -344,6 +352,7 @@
 		FEE863E626B2D2280069AB5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF4K4YZ8PT;
 				INFOPLIST_FILE = KollectionTests/Info.plist;
@@ -355,6 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedro0x53.KollectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

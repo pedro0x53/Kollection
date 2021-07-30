@@ -28,8 +28,8 @@
     return self;
 }
 
-- (void) append: (id)node {
-    [self.queue addObject:node];
+- (void) append: (id)value {
+    [self.queue addObject:value];
     self.count++;
     if (self.isEmpty == YES) {
         self.isEmpty = NO;
@@ -37,14 +37,14 @@
 }
 
 - (void) appendElementsOfArray: (NSArray *)array {
-    for (int i=0; i >= array.count; i++) {
-        [self append: array[i]];
-        self.count++;
-    }
-    
-    if (self.count > 0) {
-        self.isEmpty = NO;
-    }
+    if (self.count == 0) {
+           self.isEmpty = NO;
+       }
+
+       for (id value in array) {
+           [self.queue addObject:value];
+           self.count++;
+       }
 }
 
 - (nullable id) remove {
@@ -58,22 +58,6 @@
         return removeItem;
     }
     return nil;
-}
-
-- (nullable id) removeAtIndex: (NSInteger) index {
-    
-    if (self.count - 1 < index) {
-        return nil;
-    }
-    id removeItem = self.queue[index];
-    [self.queue removeObjectAtIndex: index];
-    
-    self.count--;
-    if (self.count == 0) {
-        self.isEmpty = YES;
-    }
-    
-    return removeItem;
 }
 
 - (NSString *) description {
