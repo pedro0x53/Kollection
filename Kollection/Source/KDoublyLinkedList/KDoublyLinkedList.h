@@ -22,11 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) append: (ObjectType) element;
 - (void) appendFirst: (ObjectType) element;
 - (void) appendAtIndex: (NSInteger) index element: (ObjectType) element;
-- (void) appendElementsOFArray: (NSArray<ObjectType> *)  array;
+- (void) appendElementsOfArray: (NSArray<ObjectType> *)  array;
 
 - (nullable ObjectType) removeLast;
 - (nullable ObjectType) removeFirst;
-- (nullable ObjectType) removeAtIndex: (NSInteger) index;
+- (ObjectType) removeAtIndex: (NSInteger) index;
 
 - (NSInteger) firstIndexOf: (ObjectType) element;
 @end

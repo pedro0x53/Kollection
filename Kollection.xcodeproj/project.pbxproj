@@ -20,6 +20,7 @@
 		FE04975D26B041490072045D /* KDoublyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04975926B041480072045D /* KDoublyLinkedList.m */; };
 		FEE863E226B2D2280069AB5B /* Kollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF2BE5626AB05CD003DD051 /* Kollection.framework */; };
 		FEE863EB26B2D31B0069AB5B /* KStackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE863EA26B2D31B0069AB5B /* KStackTest.m */; };
+		FEE863ED26B2E48C0069AB5B /* KDoublyLinkedListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE863EC26B2E48C0069AB5B /* KDoublyLinkedListTest.m */; };
 		FEF2BE6726AB05CD003DD051 /* Kollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE5926AB05CD003DD051 /* Kollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7326AB0666003DD051 /* KStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF2BE7126AB0666003DD051 /* KStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF2BE7426AB0666003DD051 /* KStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2BE7226AB0666003DD051 /* KStack.m */; };
@@ -50,6 +51,7 @@
 		FEE863DD26B2D2280069AB5B /* KollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE863E126B2D2280069AB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEE863EA26B2D31B0069AB5B /* KStackTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KStackTest.m; sourceTree = "<group>"; };
+		FEE863EC26B2E48C0069AB5B /* KDoublyLinkedListTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDoublyLinkedListTest.m; sourceTree = "<group>"; };
 		FEF2BE5626AB05CD003DD051 /* Kollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF2BE5926AB05CD003DD051 /* Kollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kollection.h; sourceTree = "<group>"; };
 		FEF2BE5A26AB05CD003DD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				FEE863E126B2D2280069AB5B /* Info.plist */,
 				4BB19FDF26B2D9CB00E06487 /* KQueueTests.m */,
 				FEE863EA26B2D31B0069AB5B /* KStackTest.m */,
+				FEE863EC26B2E48C0069AB5B /* KDoublyLinkedListTest.m */,
 			);
 			path = KollectionTests;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				4BB19FE026B2D9CB00E06487 /* KQueueTests.m in Sources */,
 				FEE863EB26B2D31B0069AB5B /* KStackTest.m in Sources */,
+				FEE863ED26B2E48C0069AB5B /* KDoublyLinkedListTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

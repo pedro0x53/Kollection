@@ -83,9 +83,11 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void) appendAtIndex: (NSInteger) index element: (id) element {
-    if (index > self.count - 1) {
-        NSLog(@"Index out of bounds.");
-        return;
+    if (index < 0 || index > self.count - 1) {
+        NSException * exception = [NSException exceptionWithName: @"KDoublyLinkedListException (appendAtIndex)"
+                                                          reason: @"Index out of bounds."
+                                                        userInfo: nil];
+        @throw exception;
     }
 
     KDoubleNode * pointer = self.head;
@@ -105,7 +107,7 @@ NS_ASSUME_NONNULL_BEGIN
     self.count++;
 }
 
-- (void) appendElementsOFArray: (NSArray<id> *)  array {
+- (void) appendElementsOfArray: (NSArray<id> *)  array {
     for (id element in array) {
         [self append: element];
     }
@@ -137,36 +139,33 @@ NS_ASSUME_NONNULL_BEGIN
     return oldTail.value;
 }
 
-- (nullable id) removeAtIndex: (NSInteger) index {
-    if (self.count == 0) { return nil; }
-
-    if (self.count - 1 < index) {
-        NSLog(@"Index out of bounds.");
-        return nil;
-    } else if (index == 1) {
-        return [self removeFirst];
-    }  else if (index == self.count - 1) {
-        return [self removeLast];
+- (id) removeAtIndex: (NSInteger) index {
+    if (index < 0 || index > self.count - 1) {
+        NSException * exception = [NSException exceptionWithName: @"KDoublyLinkedListException (removeAtIndex)"
+                                                          reason: @"Index out of bounds."
+                                                        userInfo: nil];
+        @throw exception;
     }
 
-    KDoubleNode * tmp = self.head;
+    KDoubleNode * nodeToRemove = self.head;
 
-    for (int i = 0; i < index; i++) {
-        tmp = tmp.next;
+    int i = 0;
+    while (i != index) {
+        nodeToRemove = nodeToRemove.next;
+        i++;
     }
-
-    KDoubleNode * removed = tmp.next;
-    tmp.next = removed.next;
-    removed.next.previous = tmp;
     
-    removed.next = nil;
-    removed.previous = nil;
+    nodeToRemove.previous.next = nodeToRemove.next;
+    nodeToRemove.next.previous = nodeToRemove.previous;
+    
+    nodeToRemove.next = nil;
+    nodeToRemove.previous = nil;
 
     self.count--;
 
     if (self.count == 0) { self.isEmpty = YES; }
 
-    return removed.value;
+    return nodeToRemove.value;
     
 }
 
