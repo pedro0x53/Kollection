@@ -12,7 +12,6 @@ Every data structure has a set of common functions:
 * append
 * appendElementsOfArray
 * remove
-* removeAtIndex
 * firstIndexOf
 
 and attributes:
@@ -29,6 +28,7 @@ Linked List and Doubly Linked List have extra functions:
 * appendAtIndex
 * removeFirst
 * removeLast
+* removeAtIndex
 
 and attributes:
 
@@ -73,7 +73,7 @@ pod 'Kollection'
 
 ## Author
 
-pedro0x53, daviaugusto222
+[pedro0x53](https://github.com/pedro0x53), [daviaugusto222](https://github.com/daviaugusto222)
 
 ## License
 
