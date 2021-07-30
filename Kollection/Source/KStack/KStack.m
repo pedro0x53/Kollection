@@ -67,9 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
         [self.stack removeObjectAtIndex: 0];
 
         self.count--;
-        if (self.count == 0) {
-            self.isEmpty = YES;
-        }
+        if (self.count == 0) { self.isEmpty = YES; }
 
         return element;
     }

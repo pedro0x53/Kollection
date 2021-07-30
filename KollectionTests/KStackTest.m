@@ -74,4 +74,13 @@
     XCTAssertEqual(index, -1);
 }
 
+- (void) testDescription {
+    NSArray<NSNumber *> * array = @[@1, @2, @3];
+    [self.stack appendElementsOfArray: array];
+    
+    NSString * description = [self.stack description];
+    
+    XCTAssertTrue([description isEqual: @"[3, 2, 1]"]);
+}
+
 @end
